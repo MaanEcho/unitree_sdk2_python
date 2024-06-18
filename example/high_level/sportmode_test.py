@@ -135,8 +135,8 @@ if __name__ == "__main__":
     while True:
         test.t += test.dt
 
-        test.StandUpDown()
-        # test.VelocityMove()
+        # test.StandUpDown()
+        test.VelocityMove()
         # test.BalanceAttitude()
         # test.TrajectoryFollow()
         # test.SpecialMotions()

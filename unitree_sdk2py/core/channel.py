@@ -284,7 +284,9 @@ class ChannelSubscriber:
 """
 " function ChannelFactoryInitialize. used to intialize channel everenment.
 """
+# 函数ChannelFactoryInitialize，用于初始化通道（everenment=事件？）。
 def ChannelFactoryInitialize(id: int = 0, networkInterface: str = None):
     factory = ChannelFactory()
+    # 调用ChannelFactory的Init方法来初始化通道工厂。如果初始化失败，则会引发一个异常。
     if not factory.Init(id, networkInterface):
         raise Exception("channel factory init error.")

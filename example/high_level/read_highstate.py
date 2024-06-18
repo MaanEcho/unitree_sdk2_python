@@ -15,7 +15,9 @@ def HighStateHandler(msg: SportModeState_):
 
 
 if __name__ == "__main__":
-    ChannelFactoryInitialize(0, "enp3s0")
+    # ChannelFactoryInitialize(0, "enp3s0")
+    # 这里需要根据ifconfig返回的信息，改成自己的网卡名称
+    ChannelFactoryInitialize(0, "enp49s0")
     sub = ChannelSubscriber("rt/sportmodestate", SportModeState_)
     sub.Init(HighStateHandler, 10)
 

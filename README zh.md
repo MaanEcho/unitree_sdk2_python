@@ -86,7 +86,7 @@ python3 ./example/low_level/lowlevel_control.py enp2s0
 其中 `enp2s0` 为机器人所连接的网卡名称，请根据实际情况修改。程序会输出右前腿hip关节的状态、IMU和电池电压信息。
 
 ### 底层电机控制
-首先使用 app 关闭高层运动服务(sport_mode)，否则会导致指令冲突。
+首先使用 app 关闭高层运动服务(sport_mode)，否则会导致指令冲突。(20240613要学会通过代码关闭高层运动服务)
 终端中执行：
 ```bash
 python3 ./example/low_level/lowlevel_control.py enp2s0
